@@ -314,11 +314,11 @@ $alert-10: #FFE0D7;
 $alert: $alert-100;
 
 
-  $neutral-80:#4B4B4B;
-  $neutral-60:#909090;
-  $neutral-40:#ECECEC;
-  $neutral-15:#F4F4F4;
-  $neutral-10:#F9F9F9;
+$neutral-80: #4B4B4B;
+$neutral-60: #909090;
+$neutral-40: #ECECEC;
+$neutral-15: #F4F4F4;
+$neutral-10: #F9F9F9;
 // fusv-enable
 
 // scss-docs-start theme-color-variables
@@ -372,7 +372,9 @@ $theme-colors: (
   "success": $success,
   "info": $info,
   "warning": $warning,
-  "danger": $danger,
+  //設計稿紅色
+  "alert":$alert,
+  //"danger": $danger,
   "light": $light,
   "dark": $dark) !default;
 // scss-docs-end theme-colors-map

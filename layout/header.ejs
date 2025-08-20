@@ -1,37 +1,58 @@
-<nav class="navbar navbar-light bg-white py-4 fixed-top">
-  <div class="container">
-    <a class="navbar-brand p-0" href="index.html"
-      ><img src="/assets/images/LOGO.svg" alt="logo"
-    /></a>
-    <button class="btn p-2 border-0">
+<nav class="navbar navbar-light bg-white py-4 py-lg-5 fixed-top">
+  <div class="container position-relative">
+    <div class="d-flex align-items-center me-auto">
+      <a class="navbar-brand p-0 me-7" href="index.html"><img src="/assets/images/LOGO.svg" alt="logo" /></a>
+      <form class="position-relative d-none d-lg-block">
+        <span
+          class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">
+          search </span>
+        <input type="search" class="form-control rounded-1 py-2 ps-10 navbar-lg-search" id="navbar-lg-search"
+          placeholder="搜尋景點、地點或城市">
+      </form>
+    </div>
+    <div class="position-absolute start-0 end-0 px-4 z-1 bg-white">
+      <div class="collapse" id="collapseExample">
+        <div class="d-flex align-items-center">
+          <form class="position-relative w-100">
+            <span
+              class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-4 text-neutral-60">
+              search </span>
+            <input type="search" class="form-control rounded-1 py-2 ps-10" id="navbar-search" placeholder="搜尋景點、地點或城市">
+          </form>
+          <button type="button" class="btn border-0 p-2" data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"><span class="material-icons-outlined">
+              close
+            </span></button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <button class="btn p-2 border-0 d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample">
       <span class="material-icons-outlined align-bottom"> search </span>
     </button>
-    <a href="#" class="btn border-0 align-bottom"
-      ><span class="material-icons-outlined"> shopping_cart </span></a
-    >
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar"
-    >
-      <span class="navbar-toggler-icon"></span>
+    <a href="#" class="btn border-0 align-bottom  py-2">
+      <span class=" position-relative">
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle p-0 cart-tag bg-alert">
+          2
+        </span>
+        <span class="material-icons-outlined align-bottom"> shopping_cart </span>
+      </span>
+
+    </a>
+    <div class="d-lg-block d-none ms-5 fw-bold text-primary-100"> <img src="/assets/images/user/avatar-1.png"
+        alt="avatar" class="me-2 user-img">Jessica</div>
+    <button class="btn border-0  p-2 d-lg-none" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="material-icons-outlined align-bottom">
+        menu
+      </span>
     </button>
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-    >
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -42,14 +63,8 @@
             <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="offcanvasNavbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
@@ -63,12 +78,7 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
