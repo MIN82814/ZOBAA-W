@@ -1,0 +1,10 @@
+// 修改 $utilities 設定，啟用 font-size 的響應式語法
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      (responsive: true),
+    ),
+  )
+);

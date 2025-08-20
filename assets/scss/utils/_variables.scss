@@ -312,13 +312,20 @@ $alert-100: #FF3A55;
 $alert-20: #FFBBB0;
 $alert-10: #FFE0D7;
 $alert: $alert-100;
+
+
+  $neutral-80:#4B4B4B;
+  $neutral-60:#909090;
+  $neutral-40:#ECECEC;
+  $neutral-15:#F4F4F4;
+  $neutral-10:#F9F9F9;
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary: $blue !default;
+//$primary: $blue !default;
 $secondary: $gray-600 !default;
-$success: $green !default;
-$info: $cyan !default;
+//$success: $green !default;
+//$info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
@@ -348,9 +355,9 @@ $theme-colors: (
   "success-10": $success-10,
 
   "info-120": $info-120,
-  "$info-100": $info-100,
-  "$info-20": $info-20,
-  "$info-10": $info-10,
+  "info-100": $info-100,
+  "info-20": $info-20,
+  "info-10": $info-10,
 
 
   "alert-120": $alert-120,
