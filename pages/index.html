@@ -1,77 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>index</title>
+</head>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit,
-          iusto odio assumenda alias id nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+<body>
+  <%- include('./layout/header'); -%>
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <h2 class="fs-5 fw-bold text-primary bg-primary-10 rounded-1 p-2 d-inline-block mb-4">ZOBAA 旅行推薦平台</h2>
+              <h1 class="fs-2 fw-bold text-primary"><span class="d-block d-lg-inline">用旅行，</span><span>收藏世界的樣子</span>
+              </h1>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              關閉
-            </button>
-            <button type="button" class="btn btn-primary">確定</button>
+
+        </div>
+      </section>
+      <section class="recommend py-10">
+        <div class="container text-white d-lg-flex justify-content-lg-between align-items-lg-center mb-10">
+          <h3 class="mb-7">你的<br>專屬推薦</h3>
+          <div class="mb-4">
+            <p>來看我們的精選推薦行程，滿意度高達 99.2%<br>給自己一個難忘的旅遊行程吧！</p>
+            <a href="#" class="text-white text-decoration-none">查看全部行程<span
+                class="material-icons-outlined align-bottom ms-2">
+                arrow_forward
+              </span></a>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="card bg-dark text-white rounded-5 overflow-hidden">
+                  <img src="/assets/images/index/recommend.png" class="card-img" alt="...">
+                  <div class="card-img-overlay  d-flex flex-column justify-content-end">
+                    <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+                    <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                    <button type="button"
+                      class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                        class="material-icons-outlined align-bottom">
+                        arrow_forward
+                      </span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-dark text-white rounded-5 overflow-hidden">
+                  <img src="/assets/images/index/recommend-1.png" class="card-img" alt="...">
+                  <div class="card-img-overlay  d-flex flex-column justify-content-end">
+                    <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+                    <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                    <button type="button"
+                      class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                        class="material-icons-outlined align-bottom">
+                        arrow_forward
+                      </span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-dark text-white rounded-5 overflow-hidden">
+                  <img src="/assets/images/index/recommend-2.png" class="card-img" alt="...">
+                  <div class="card-img-overlay  d-flex flex-column justify-content-end">
+                    <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+                    <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                    <button type="button"
+                      class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                        class="material-icons-outlined align-bottom">
+                        arrow_forward
+                      </span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card bg-dark text-white rounded-5 overflow-hidden">
+                  <img src="/assets/images/index/recommend-3.png" class="card-img" alt="...">
+                  <div class="card-img-overlay  d-flex flex-column justify-content-end">
+                    <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+                    <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+                    <button type="button"
+                      class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                        class="material-icons-outlined align-bottom">
+                        arrow_forward
+                      </span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+
+
+          <!--
+
+          <div class="card bg-dark text-white rounded-5 overflow-hidden">
+            <img src="/assets/images/index/recommend.png" class="card-img" alt="...">
+            <div class="card-img-overlay  d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+              <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <button type="button"
+                class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                  class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span></button>
+            </div>
+          </div>
+          <div class="card bg-dark text-white rounded-5 overflow-hidden">
+            <img src="/assets/images/index/recommend-1.png" class="card-img" alt="...">
+            <div class="card-img-overlay  d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+              <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <button type="button"
+                class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                  class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span></button>
+            </div>
+          </div>
+          <div class="card bg-dark text-white rounded-5 overflow-hidden">
+            <img src="/assets/images/index/recommend-2.png" class="card-img" alt="...">
+            <div class="card-img-overlay  d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+              <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <button type="button"
+                class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                  class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span></button>
+            </div>
+          </div>
+          <div class="card bg-dark text-white rounded-5 overflow-hidden">
+            <img src="/assets/images/index/recommend-3.png" class="card-img" alt="...">
+            <div class="card-img-overlay  d-flex flex-column justify-content-end">
+              <h4 class="mb-2 fw-bold fs-3">峇里島渡假漫遊</h4>
+              <p class="mb-7 fs-6">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <button type="button"
+                class="btn btn-light p-6 rounded-pill d-flex justify-content-between fw-bold">訂購行程<span
+                  class="material-icons-outlined align-bottom">
+                  arrow_forward
+                </span></button>
+            </div>
+          </div>-->
+        </div>
+      </section>
+    </main>
 
     <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        const swiper1 = new Swiper(".swiper", {
+          slidesPerView: "auto",
+          spaceBetween: 16,
+          breakpoints: {
+            480: {
+              slidesPerView: "auto",
+              spaceBetween: 24,
+            },
+          },
+        });</script>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+
+</body>
+
 </html>
