@@ -9,4 +9,16 @@
 
 .recommend {
   background-color: #221F1E;
+
+  .swiper-slide .card {
+    height: 400px;
+    /* 自訂高度 */
+  }
+
+  .card-img {
+    object-fit: cover;
+    /* 保持比例填滿 */
+    height: 100%;
+    width: 100%;
+  }
 }
