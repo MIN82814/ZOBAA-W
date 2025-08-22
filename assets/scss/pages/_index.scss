@@ -10,15 +10,47 @@
 .recommend {
   background-color: #221F1E;
 
-  .swiper-slide .card {
+  .swiper-slide {
     height: 400px;
-    /* 自訂高度 */
+    width: 277px;
+
+    @include media-breakpoint-up(lg) {
+      width: 65%;
+      max-width: 416px;
+      height: 600px;
+      transition: width 0.5s;
+
+      button {
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        border-radius: 100px;
+        transition: all 0.5s;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+      }
+
+      .swiper-slide:first-child {
+        width: 100%;
+      }
+
+      &:hover {
+        width: 100%;
+
+        button {
+          height: 64px;
+          opacity: 1;
+          padding: 0 20px;
+        }
+      }
+
+    }
+
   }
 
   .card-img {
     object-fit: cover;
-    /* 保持比例填滿 */
-    height: 100%;
-    width: 100%;
   }
+
 }
