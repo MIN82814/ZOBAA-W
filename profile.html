@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="zh-TW">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
-  <script type="module" crossorigin src="/ZOBAA-W/assets/main-BPv0NK6m.js"></script>
-  <link rel="stylesheet" crossorigin href="/ZOBAA-W/assets/main-CSh5UELE.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>index</title>
+    <script type="module" crossorigin src="/ZOBAA-W/assets/main-BPv0NK6m.js"></script>
+    <link rel="stylesheet" crossorigin href="/ZOBAA-W/assets/main-CSh5UELE.css">
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-light bg-white py-4 py-lg-5 fixed-top">
   <div class="container position-relative">
     <div class="d-flex align-items-center me-auto">
@@ -98,20 +105,189 @@
       </div>
     </div>
   </div>
-</nav>        <main>
-            <section class="py-10 py-lg-11">
-                <ol class="d-flex">
-                    <li class="breadcrumb-item text-md">
-                        <a href="index.html" class="breadcrumb-item-link">首頁</a>
-                    </li>
-                    <li class="breadcrumb-item text-md">
-                        <a href="#" class="breadcrumb-item-link"> 女鞋</a>
-                    </li>
-                    <li class="breadcrumb-item text-md">所有商品</li>
-                </ol>
-            </section>
-        </main>
-        <footer class="bg-black">
+</nav>    <main class="py-lg-12 py-10">
+      <div class="mb-lg-11 mb-10">
+        <div class="container profile hero">
+          <div class="position-relative">
+            <img
+              src="/ZOBAA-W/assets/hero-Ky0O1_QM.png"
+              alt="個人資訊頁首圖"
+              class="img-fluid rounded-24 object-fit-cover hero-bg"
+            />
+            <span
+              class="position-absolute bottom-0 end-0 text-white m-9 d-none d-lg-block"
+            >
+              <span class="material-icons-outlined align-bottom me-2">
+                mode_edit
+              </span>
+              更換封面</span
+            >
+            <!--user大頭照-->
+            <div
+              class="position-absolute top-100 start-50 translate-middle d-flex flex-column"
+            >
+              <div class="d-flex flex-column">
+                <div class="position-relative">
+                  <img
+                    src="/ZOBAA-W/assets/avatar-1-cp2HwrEX.png"
+                    alt="avatar"
+                    class="user-img"
+                  />
+                  <div
+                    class="position-absolute bottom-0 end-0 bg-primary-100 rounded-circle p-2 text-white"
+                  >
+                    <span class="material-icons-outlined align-bottom">
+                      mode_edit
+                    </span>
+                  </div>
+                </div>
+                <div class="text-center d-flex flex-column align-items-center">
+                  <span class="text-primary-100 fw-bold name">Jessica</span>
+                  <span class="text-neutral-80 fs-6 fs-lg-5"
+                    >jessica.yen@gmail.com</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="rounded-24 bg-white shadow py-8 px-7 mb-lg-7 mb-5">
+          <div class="d-flex justify-content-between">
+            <p class="fs-5 fw-bold text-start w-30">
+              <span class="profiles-nav-active">我的帳號</span>
+            </p>
+            <p
+              class="border-start border-neutral-40 ps-7 border-1 fs-5 fw-bold text-start w-30"
+            >
+              訂單管理
+            </p>
+            <p
+              class="border-start border-neutral-40 ps-7 border-1 fs-5 fw-bold text-start w-30"
+            >
+              我的收藏
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--我的帳號-->
+      <div class="container">
+        <div class="rounded-24 bg-white shadow px-5 pt-lg-9 pt-0 px-lg-9">
+          <h2 class="fw-bold fs-2 fs-lg-1 mt-9">我的帳號</h2>
+          <div>
+            <div class="py-10">
+              <ul
+                class="nav nav-underline border-bottom"
+                id="account-tab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="user-info-tab"
+                    data-bs-toggle="tab"
+                    href="#user-info"
+                    role="tab"
+                    aria-controls="user-info"
+                    aria-selected="true"
+                    >個人資訊</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="passengers-tab"
+                    data-bs-toggle="tab"
+                    href="#passengers"
+                    role="tab"
+                    aria-controls="passengers"
+                    aria-selected="false"
+                    >常用旅客</a
+                  >
+                </li>
+              </ul>
+
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="user-info"
+                  role="tabpanel"
+                  aria-labelledby="user-info-tab"
+                  tabindex="0"
+                >
+                  <div class="py-10">
+                    <div class="mb-7">
+                      <h3 class="fs-6 fs-lg-5 text-neutral-80 mb-2">姓名</h3>
+                      <p class="fw-bold fs-5 fs-lg-4 text-neutral-100">
+                        Jessica Yen
+                      </p>
+                    </div>
+                    <div class="mb-7">
+                      <h3 class="fs-6 fs-lg-5 text-neutral-80 mb-2">
+                        電子信箱
+                      </h3>
+                      <p class="fw-bold fs-5 fs-lg-4 text-neutral-100">
+                        jessica.yen@gmail.com
+                      </p>
+                    </div>
+                    <div class="mb-7">
+                      <h3 class="fs-6 fs-lg-5 text-neutral-80 mb-2">密碼</h3>
+                      <p class="fw-bold fs-5 fs-lg-4 text-neutral-100">
+                        ************
+                      </p>
+                    </div>
+                    <div class="mb-7">
+                      <h3 class="fs-6 fs-lg-5 text-neutral-80 mb-2">
+                        聯絡電話
+                      </h3>
+                      <p class="fw-bold fs-5 fs-lg-4 text-neutral-100">
+                        +886 912-345-678
+                      </p>
+                    </div>
+                    <div class="mb-7">
+                      <h3 class="fs-6 fs-lg-5 text-neutral-80 mb-2">地址</h3>
+                      <p class="fw-bold fs-5 fs-lg-4 text-neutral-100">
+                        台北市士林區幸福路193號5樓之1
+                      </p>
+                    </div>
+                    <div>
+                      <h3 class="fs-6 fs-lg-5 text-neutral-80">生日</h3>
+                      <p class="fw-bold fs-5 fs-lg-4 text-neutral-100">
+                        1995-09-20
+                      </p>
+                    </div>
+                  </div>
+                  <div class="text-lg-end text-center">
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark border border-primary-100 py-5 px-9 rounded-12 edit-btn"
+                    >
+                      <span class="material-icons-outlined align-bottom me-1">
+                        mode_edit
+                      </span>
+                      編輯資訊
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="passengers"
+                  role="tabpanel"
+                  aria-labelledby="passengers-tab"
+                  tabindex="0"
+                >
+                  常用旅客
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-black">
   <div class="container">
     <div class="row flex-column flex-lg-row">
       <div class="col-lg-6 mb-10 mb-lg-0">
@@ -165,6 +341,5 @@
   </div>
 </footer>
 
-</body>
-
+  </body>
 </html>
