@@ -1,50 +1,62 @@
 .profile .user-img {
-    width: 120px;
-    height: 120px;
-       border-radius: 50%;
-    border: 2px solid $primary-100;
-}
-.profile .name{
-    font-size: 20px;
-}
-.edit-btn{
-width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid $primary-100;
 }
 
-  @include media-breakpoint-up(lg) {
-.profile .user-img {
+.profile .name {
+  font-size: 20px;
+}
+
+.edit-btn {
+  width: 100%;
+}
+
+@include media-breakpoint-up(lg) {
+  .profile .user-img {
     width: 160px;
     height: 160px;
     border: 4px solid $primary-100;
-}
-.profile .name{
-    font-size: 24px;
-}
-.edit-btn{
-    width: auto;
-}
-
-}
-
-.hero{
-    padding-bottom: 97px;
-}
-.hero-bg{
-    height: 200px;
-}
-
-  @include media-breakpoint-up(lg) {
-  .hero{
-    padding-bottom: 145px;
-}  
-   .hero-bg{
-    height: 480px;
-}
   }
 
- .nav-underline .nav-link.active {
-border-color: #4A3830;
-border-width: 4px;
+  .profile .name {
+    font-size: 24px;
+  }
+
+  .edit-btn {
+    width: auto;
+  }
+
+}
+
+.hero {
+  padding-bottom: 97px;
+}
+
+.hero-bg {
+  height: 200px;
+}
+
+@include media-breakpoint-up(md) {
+
+  .hero-bg {
+    height: 480px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .hero {
+    padding-bottom: 145px;
+  }
+
+}
+
+
+.nav-underline .nav-link.active {
+  border-color: #4A3830;
+  border-width: 4px;
 }
 
 
@@ -62,4 +74,29 @@ border-width: 4px;
     border-radius: 2px;
   }
 
+}
+
+/*常用旅客*/
+.frequent-traveler {
+  .user-img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $primary-100;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .user-block:hover .bt {
+    background-color: $neutral-40;
+  }
+
+  .active {
+    background-color: transparent;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .active {
+      background-color: $neutral-40;
+    }
+  }
 }

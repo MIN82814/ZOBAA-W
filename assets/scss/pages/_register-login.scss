@@ -1,0 +1,23 @@
+.auth-form {
+    padding-top: 60px;
+    padding-bottom: 52px;
+
+    .bnt-gr:hover {
+        background-color: #ECECEC;
+    }
+
+    .swiper {
+        width: 600px;
+        flex-shrink: 0;
+    }
+
+
+
+}
+
+@include media-breakpoint-up(lg) {
+    .auth-form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

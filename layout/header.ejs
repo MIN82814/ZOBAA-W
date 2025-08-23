@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-white py-4 py-lg-5 fixed-top">
+<nav class="navbar navbar-light bg-white py-4 py-lg-5">
   <div class="container position-relative">
     <div class="d-flex align-items-center me-auto">
       <a class="navbar-brand p-0 me-7" href="index.html"><img src="/assets/images/LOGO.svg" alt="logo" /></a>
@@ -32,7 +32,7 @@
     <button class="btn p-2 border-0 d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapseExample">
       <span class="material-icons-outlined align-bottom"> search </span>
     </button>
-    <a href="#" class="btn border-0 align-bottom  py-2">
+    <a href="#" class="btn border-0 align-bottom  py-2 me-5 d-flex justify-content-center align-items-center">
       <span class=" position-relative">
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle p-0 cart-tag bg-alert">
           2
@@ -40,48 +40,38 @@
         <span class="material-icons-outlined align-bottom"> shopping_cart </span>
       </span>
     </a>
-
+    <a href="login.html" class="btn btn-primary py-5 px-9 rounded-12  fw-semibold d-none d-lg-block">登入 / 註冊 </a>
+    <!--
     <div class="d-lg-block d-none ms-5 fw-bold text-primary-100"> <img src="/assets/images/user/avatar-1.png"
-        alt="avatar" class="me-2 user-img">Jessica</div>
+        alt="avatar" class="me-2 user-img">Jessica</div>-->
     <button class="btn border-0  p-2 d-lg-none" type="button" data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="material-icons-outlined align-bottom">
         menu
       </span>
     </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-end p-7 custom-offcanvas" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div class="d-flex align-items-center">
+          <img src="/assets/images/icon/visitor.svg" alt="visitor" style="width: 32px;" class="me-2">
+          <div>
+            <p class="fw-bold text-primary">訪客</p>
+            <p class="text-primary">未登入</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <hr class="mb-7">
+          <h2 class="fw-bold fs-4 mb-1">歡迎來到 ZOBAA</h2>
+          <p>加入會員即可立即訂購、收藏行程，並享相關優惠好禮。</p>
 
+        </div>
+      </div>
+      <div class="offcanvas-footer">
+        <a href="login.html" class="btn btn-primary  py-5 rounded-12  mb-5 fw-semibold w-100">登入 / 註冊 </a>
       </div>
     </div>
   </div>

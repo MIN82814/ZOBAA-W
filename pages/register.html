@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>註冊-ZOBAA</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container-fluid">
+            <div class="d-flex auth-form align-items-center">
+                <div class="swiper d-none d-lg-block m-0 w-600">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/assets/images/login/cover-1.png" alt="把旅遊變成生活養分(圖)"
+                                class="object-fit-cover w-600"></div>
+                        <div class="swiper-slide"><img src="/assets/images/login/cover-2.png" alt="把旅遊變成生活養分(圖)"
+                                class="object-fit-cover w-600"></div>
+                        <div class="swiper-slide"><img src="/assets/images/login/cover-3.png" alt="把旅遊變成生活養分(圖)"
+                                class="object-fit-cover w-600"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="fw-bold fs-lg-1 fs-2 mb-lg-10 mb-7">歡迎加入 ZOBAA</h1>
+
+                            <!-- 社群登入按鈕 -->
+                            <div class="mb-lg-10 mb-7">
+                                <button type="button"
+                                    class="btn btn-outline-natural-40 border border-natural-40 w-100 rounded-12 d-flex py-5 ps-5 bnt-gr mb-5">
+                                    <img src="/assets/images/icon/ic_google.svg" alt="google icon"
+                                        style="width:24px;height:24px;">
+                                    <p class="text-center w-100 text-neutral-80 m-0">使用 Google 帳號註冊</p>
+                                </button>
+                                <button type="button"
+                                    class="btn btn-outline-natural-40 border border-natural-40 w-100 rounded-12 d-flex py-5 ps-5 bnt-gr mb-5">
+                                    <img src="/assets/images/icon/ic_facebook.svg" alt="fb icon"
+                                        style="width:24px;height:24px;">
+                                    <p class="text-center w-100 text-neutral-80 m-0">使用 Facebook 帳號註冊</p>
+                                </button>
+                                <button type="button"
+                                    class="btn btn-outline-natural-40 border border-natural-40 w-100 rounded-12 d-flex py-5 ps-5 bnt-gr mb-5">
+                                    <img src="/assets/images/icon/ic_apple.svg" alt="apple icon"
+                                        style="width:24px;height:24px;">
+                                    <p class="text-center w-100 text-neutral-80 m-0">使用 Apple 帳號註冊</p>
+                                </button>
+                            </div>
+
+                            <!-- 表單 -->
+                            <div>
+                                <h2 class="mb-5 fs-5 fw-semibold">或使用 ZOBAA 帳號註冊</h2>
+
+                                <form id="registerForm">
+                                    <div class="mb-5">
+                                        <label for="email" class="form-label">電子信箱<span
+                                                class="text-alert ms-1">*</span></label>
+                                        <input type="email" class="form-control" id="email" placeholder="請輸入電子信箱"
+                                            required>
+                                    </div>
+
+                                    <div class="mb-5 position-relative">
+                                        <label for="password" class="form-label">密碼<span
+                                                class="text-alert ms-1">*</span></label>
+                                        <input type="password" class="form-control" id="password" placeholder="請輸入密碼"
+                                            required>
+                                        <!-- 一開始隱藏 icon -->
+                                        <img src="/assets/images/icon/eye-off.svg" alt="toggle" id="passwordIcon"
+                                            style="width:20px;height:20px; position:absolute; top:50%; right:16px; transform:translateY(45%); display:none;">
+                                    </div>
+
+                                    <div class="mb-7 position-relative">
+                                        <label for="passwordConfirm" class="form-label">確認密碼<span
+                                                class="text-alert ms-1">*</span></label>
+                                        <input type="password" class="form-control" id="passwordConfirm"
+                                            placeholder="請再輸入一次密碼" required>
+                                        <img src="/assets/images/icon/eye-off.svg" alt="toggle" id="passwordConfirmIcon"
+                                            style="width:20px;height:20px; position:absolute; top:50%; right:16px; transform:translateY(45%); display:none;">
+                                    </div>
+
+                                    <div class="mb-lg-10 mb-7">
+                                        <button type="submit" id="submitBtn"
+                                            class="btn btn-neutral-40 text-neutral-60 border border-neutral-40 py-5 rounded-12 w-100 mb-5 fw-semibold">立即註冊</button>
+                                        <div class="form-text m-0 text-neutral-80">
+                                            建立帳號即表示您同意我們的
+                                            <a href="#" class="text-decoration-underline">服務條款</a>及
+                                            <a href="#" class="text-decoration-underline">隱私權政策</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <p class="text-neutral-80">已經有 ZOBAA 帳號了嗎？
+                                    <a href="login.html"
+                                        class="text-decoration-underline fw-semibold ms-2 text-primary">立即登入</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper1 = new Swiper(".swiper", {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            breakpoints: {
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                },
+            },
+            autoplay: {
+                delay: 3000, // 每張間隔時間 (毫秒)
+                disableOnInteraction: false, // 使用者操作後是否停止 (false = 不停止)
+            },
+            loop: true,
+        });
+    </script>
+    <script>
+        // 元素
+        const email = document.querySelector("#email");
+        const password = document.querySelector("#password");
+        const passwordIcon = document.querySelector("#passwordIcon");
+        const passwordConfirm = document.querySelector("#passwordConfirm");
+        const passwordConfirmIcon = document.querySelector("#passwordConfirmIcon");
+        const submitBtn = document.querySelector("#submitBtn");
+
+        // 輸入時顯示閉眼 icon
+        function toggleIcon(input, icon) {
+            icon.style.display = input.value ? "block" : "none";
+        }
+
+        password.addEventListener("input", () => toggleIcon(password, passwordIcon));
+        passwordConfirm.addEventListener("input", () => toggleIcon(passwordConfirm, passwordConfirmIcon));
+
+        // 三個欄位輸入檢查，決定是否開放按鈕
+        function checkForm() {
+            if (email.value && password.value && passwordConfirm.value) {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove("btn-neutral-40", "text-neutral-60", "border-neutral-40");
+                submitBtn.classList.add("btn-primary-100", "border-primary-100");
+            } else {
+                submitBtn.disabled = true;
+                submitBtn.classList.add("btn-neutral-40", "text-neutral-60", "border-neutral-40");
+                submitBtn.classList.remove("btn-primary-100", "border-primary-100");
+            }
+        }
+
+        [email, password, passwordConfirm].forEach(input => input.addEventListener("input", checkForm));
+    </script>
+</body>
+
+</html>

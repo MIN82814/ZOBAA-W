@@ -1,20 +1,26 @@
 // 修改 $utilities 設定，啟用 font-size 的響應式語法
-$utilities: map-merge(
-  $utilities,
-  (
-    "font-size": map-merge(
-      map-get($utilities, "font-size"),
-      (responsive: true),
-    ),
-  )
-);
+$utilities: map-merge($utilities,
+    ("font-size": map-merge(map-get($utilities, "font-size"),
+        (responsive: true),
+      ),
+    ));
 
 .rounded-24 {
   border-radius: 24px;
 }
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
 .rounded-12 {
   border-radius: 12px;
 }
-.w-30{
+
+.w-30 {
   width: 30%;
+}
+
+.w-600 {
+  width: 600px;
 }
