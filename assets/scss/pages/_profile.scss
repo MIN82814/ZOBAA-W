@@ -1,3 +1,10 @@
+.profile-bg {
+  background-image: url(/assets/images/user/bg-line.svg);
+  background-color: $neutral-15;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .profile .user-img {
   width: 120px;
   height: 120px;
